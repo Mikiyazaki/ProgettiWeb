@@ -1,129 +1,402 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <title>Giudizi e Voti - Portfolio Progetti</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    .panel-body {
-      background-color: #f9f9f9;
-      padding: 20px;
-    }
-  </style>
-</head>
-<body>
+   <head>
+      <title>Giudizi e Voti - Portfolio Progetti</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>                        
+               </button>
+               <a class="navbar-brand" href="#">Valutazioni Progetti</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Progetti</a></li>
+                  <li><a href="#">Premi</a></li>
+                  <li><a href="#">Contatti</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Jumbotron -->
+      <div class="jumbotron text-center">
+         <h1>Progetti di Tecnologie Web</h1>
+         <p>Una panoramica dei progetti svolti dalle classi 5 per l'Anno Scolastico 2025-2026 con i premi speciali assegnati.</p>
+      </div>
+      <!-- Griglia di valutazione -->
+      <div class="container">
+         <h3>I Progetti</h3>
+         
+         
+         <!-- ------------------------------------->
+         <!-- SPARKED                            -->
+         <!-- ------------------------------------->
+         <div class="panel panel-default">
+            <!--     <div class="panel-heading">Gruppo 7 - Sparked</div>
+               <div class="panel-body">
+                 <p><strong>Voto: 10</strong></p>
+                 <p><strong>Feedback:</strong> Il sito presenta un’interfaccia complessa, curata e interattiva, con un utilizzo avanzato di HTML, CSS e JavaScript puro. Il gruppo ha dimostrato grande autonomia e competenza. Il progetto è il più tecnicamente avanzato.</p>
+                 <p><strong>Premio:</strong> "Miglior Competenze Tecniche"</p>
+               </div> -->
+            <div class="panel-heading">Gruppo 7 – <a href="http://filippoturci29-del.github.io/Sparked/" target="_blank">Sparked</a>
+               <br><b>“Dove la tecnologia accende le connessioni.”</b><br>
+               Un’esperienza web interattiva che unisce le anime gemelle. Pronto/a a trovare il tuo Mr Right o la tua Principessa?
+            </div>
+            <div class="panel-body">
+               <p>
+                  <strong>Feedback:</strong><br>
+                  <!-- Il sito presenta un’interfaccia complessa, curata e interattiva, con un utilizzo avanzato di HTML, CSS e JavaScript puro. Il gruppo ha dimostrato grande autonomia e competenza. Il progetto è il più tecnicamente avanzato. -->
+                  Lo studente ha realizzato in autonomia un progetto web di livello decisamente superiore rispetto alle richieste del corso. Il sito presenta un’interfaccia complessa, curata e interattiva, con un utilizzo avanzato di HTML, CSS e JavaScript puro, dimostrando competenze tecniche, autonomia e capacità progettuale. La documentazione è chiara, approfondita e utilizza un linguaggio tecnico appropriato. Il lavoro evidenzia forte impegno personale, maturità e grande interesse per la disciplina. È il progetto più tecnicamente avanzato.
+               </p>
+               <!-- Bottone mostra voto -->
+               <button class="btn btn-primary btn-sm"
+                  onclick="toggleVoto('voto-sparked')">
+               Mostra voto
+               </button>
+               <p id="voto-sparked" style="display:none; margin-top:10px;">
+                  <strong>Voto:</strong> 10
+               </p>
+               <hr>
+               <!-- Icona badge -->
+               <p>
+                  <strong>Badge:</strong>
+                  <span class="glyphicon glyphicon-tags"
+                     style="cursor:pointer; font-size:20px; color:gold;"
+                     title="Clicca per scoprire il badge"
+                     onclick="toggleBadge('badge-sparked')">
+                  </span>
+               </p>
+               <div id="badge-sparked" style="display:none; margin-top:10px;">
+                  <strong>Premio:</strong> "Miglior Competenze Tecniche"
+               </div>
+            </div>
+         </div>
+         
+         
+         <!-- ------------------------------------->
+         <!-- Gruppo 4 - Film Locations          -->
+         <!-- ------------------------------------->
+         <div class="panel panel-default">
+            <!-- <div class="panel-heading">Gruppo 4 - Film Locations</div>
+               <div class="panel-body">
+                 <p><strong>Voto: 10</strong></p>
+                 <p><strong>Feedback:</strong> Il gruppo ha realizzato un progetto completo e ben strutturato, con una navigazione chiara. Ottimo lavoro di gruppo e applicazione pratica delle lezioni teoriche.</p>
+                 <p><strong>Premio:</strong> "Eccellenza nella Collaborazione"</p>
+               </div>
+               </div>
+               
+               <div class="panel panel-default">
+               <div class="panel-heading">Gruppo 6 - Gioca Che Ti Passa</div>
+               <div class="panel-body">
+                 <p><strong>Voto: 10</strong></p>
+                 <p><strong>Feedback:</strong> Il gruppo ha lavorato con serietà e creatività, portando un’idea originale e un’ottima personalizzazione grafica. Buona documentazione e concetto di community.</p>
+                 <p><strong>Premio:</strong> "Originalità e Creatività"</p>
+               </div> -->
+            <div class="panel panel-default">
+               <div class="panel-heading">Gruppo 4 – <a href="" target="_blank">Film Locations</a>
+                   <br>
+                   <b>“Viaggia nel cinema, un luogo alla volta.”</b>
+                   <p>Scopri dove prendono vita i film più iconici: una mappa narrativa che trasforma le location cinematografiche in mete da esplorare.</p>
+               </div>
+               
+               <div class="panel-body">
+                  <p>
+                     <strong>Feedback:</strong><br>
+                     <!-- Il gruppo ha lavorato con serietà e continuità, realizzando un progetto completo,
+                        coerente e ben documentato.-->
+                     Il gruppo ha lavorato con serietà e continuità fin dalle prime fasi del progetto, dimostrando attenzione sia alle lezioni teoriche sia alle attività di laboratorio. Il progetto risulta completo, ben strutturato e coerente, con una documentazione integrata nel sito e una realizzazione chiara e ordinata. L’idea è originale e ben sviluppata, e il sito offre una navigazione efficace e una buona esperienza utente. Il gruppo ha posto domande pertinenti e ha saputo applicare in modo consapevole le indicazioni ricevute. Nel complesso, il lavoro rappresenta l’esempio migliore di impegno, metodo e risultato all’interno della classe.
+                  </p>
+                  <!-- Bottone mostra voto -->
+                  <button class="btn btn-primary btn-sm"
+                     onclick="toggleVoto('voto-film')">
+                  Mostra voto
+                  </button>
+                  <p id="voto-film" style="display:none; margin-top:10px;">
+                     <strong>Voto:</strong> 10
+                  </p>
+                  <hr>
+                  <!-- Icona badge -->
+                  <p>
+                     <strong>Badge:</strong>
+                     <span class="glyphicon glyphicon-star"
+                        style="cursor:pointer; font-size:20px; color:gold;"
+                        title="Clicca per scoprire il badge"
+                        onclick="toggleBadge('badge-film')">
+                     </span>
+                  </p>
+                  <div id="badge-film" style="display:none; margin-top:10px;">
+                     <strong>Premio:</strong> "Miglior metodo di lavoro e collaborazione"
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         
+         <!-- ------------------------------------->
+         <!-- Gruppo 6 - Gioca che ti passa       -->
+         <!-- ------------------------------------->
+         <div class="panel panel-default">
+            <div class="panel panel-default">
+               <div class="panel-heading">Gruppo 6 – <a href="http://fpt.giocachetipassa.altervista.org/" target="_blank">Gioca che ti passa</a></div>
+               <div class="panel-body">
+                  <p>
+                     <strong>Feedback:</strong><br>
+                     Il gruppo ha lavorato con serietà e continuità, dimostrando attenzione sia alla progettazione che alla realizzazione del sito. Il progetto si distingue per l’originalità dell’idea e per una forte personalizzazione grafica, che contribuisce a creare un’identità riconoscibile. La documentazione è ben integrata nel sito e completa. Dal punto di vista dell’usabilità restano alcune ingenuità nella navigazione, ma il lavoro complessivo è di livello molto alto per un primo approccio allo sviluppo web. Costituisce bonus l’impegno del gruppo nella creazione di un altro progetto parallelo, ideato in autonomia e utilizzato per la presentazione dell’indirizzo sia agli open day. È il gruppo che ha mostrato la maggiore partecipazione ed entusiasmo per l’argomento.
 
-<!-- Navbar -->
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Valutazioni Progetti</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Progetti</a></li>
-        <li><a href="#">Premi</a></li>
-        <li><a href="#">Contatti</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                  </p>
+                  <!-- Bottone mostra voto -->
+                  <button class="btn btn-primary btn-sm"
+                     onclick="toggleVoto('voto-giocachetipassa')">
+                  Mostra voto
+                  </button>
+                  <p id="voto-giocachetipassa" style="display:none; margin-top:10px;">
+                     <strong>Voto:</strong> 10
+                  </p>
+                  <hr>
+                  <!-- Icona badge -->
+                  <p>
+                     <strong>Badge:</strong>
+                     <span class="glyphicon glyphicon-star"
+                        style="cursor:pointer; font-size:20px; color:gold;"
+                        title="Clicca per scoprire il badge"
+                        onclick="toggleBadge('badge-giocachetipassa')">
+                     </span>
+                  </p>
+                  <div id="badge-giocachetipassa" style="display:none; margin-top:10px;">
+                      <strong>Premio:</strong> "Originalità e Creatività"
+                  </div>
+               </div>
+            </div>
+         </div>
+         
 
-<!-- Jumbotron -->
-<div class="jumbotron text-center">
-  <h1>Valutazioni e Premi per i Progetti</h1>
-  <p>Una panoramica dei progetti con giudizi, voti e premi speciali assegnati.</p>
-</div>
 
-<!-- Griglia di valutazione -->
-<div class="container">
-  <h3>Giudizi e Voti</h3>
-  <div class="panel panel-default">
-    <div class="panel-heading">Gruppo 7 - Sparked</div>
-    <div class="panel-body">
-      <p><strong>Voto: 10</strong></p>
-      <p><strong>Feedback:</strong> Il sito presenta un’interfaccia complessa, curata e interattiva, con un utilizzo avanzato di HTML, CSS e JavaScript puro. Il gruppo ha dimostrato grande autonomia e competenza. Il progetto è il più tecnicamente avanzato.</p>
-      <p><strong>Premio:</strong> "Miglior Competenze Tecniche"</p>
-    </div>
-  </div>
+         <!-- ------------------------------------->
+         <!-- Gruppo 3 - Fit Life                -->
+         <!-- ------------------------------------->
+         <div class="panel panel-default">
+            <!--  <div class="panel-heading">Gruppo 3 - Fit Life</div>
+               <div class="panel-body">
+                 <p><strong>Voto: 9</strong></p>
+                 <p><strong>Feedback:</strong> Progetto solido, con un buon uso di Bootstrap e una struttura chiara. Impegno e serietà anche se il lavoro non è stato sempre costante.</p>
+                 <p><strong>Premio:</strong> "Miglior Progetto Funzionale"</p>
+               </div>
+               </div>
+               
+               <div class="panel panel-default">
+               <div class="panel-heading">Gruppo 3 - AI or Not AI</div>
+               <div class="panel-body">
+                 <p><strong>Voto: 8.5</strong></p>
+                 <p><strong>Feedback:</strong> Un progetto originale e ben strutturato, anche se con alcune ingenuità tecniche. L'idea è molto attuale e il sito funziona bene per il livello.</p>
+                 <p><strong>Premio:</strong> "Miglior Idea Creativa"</p>
+               </div> -->
+               <div class="panel panel-default">
+               <div class="panel-heading">Gruppo 3 - <a href="" target="_blank">Fit Life</a></div>
+               <div class="panel-body">
+                  <p>
+                     <strong>Feedback:</strong><br>
+                     <!-- Il gruppo ha lavorato con serietà e continuità, realizzando un progetto completo,
+                        coerente e ben documentato.-->
+                     Progetto molto solido e ben strutturato, accompagnato da una documentazione completa e ordinata che segue in modo chiaro il processo di progettazione. L’uso di Bootstrap per la suddivisione in griglie e card mostra una buona comprensione della struttura dell’interfaccia. Il sito è coerente, navigabile e adatto al pubblico di riferimento. Il gruppo ha lavorato con buona attenzione se pur non sempre costante, dimostrando infine impegno e serietà.
 
-  <div class="panel panel-default">
-    <div class="panel-heading">Gruppo 4 - Film Locations</div>
-    <div class="panel-body">
-      <p><strong>Voto: 10</strong></p>
-      <p><strong>Feedback:</strong> Il gruppo ha realizzato un progetto completo e ben strutturato, con una navigazione chiara. Ottimo lavoro di gruppo e applicazione pratica delle lezioni teoriche.</p>
-      <p><strong>Premio:</strong> "Eccellenza nella Collaborazione"</p>
-    </div>
-  </div>
+                  </p>
+                  <!-- Bottone mostra voto -->
+                  <button class="btn btn-primary btn-sm"
+                     onclick="toggleVoto('voto-film')">
+                  Mostra voto
+                  </button>
+                  <p id="voto-fitlife" style="display:none; margin-top:10px;">
+                     <strong>Voto:</strong> 9
+                  </p>
+                  <hr>
+                  <!-- Icona badge -->
+                  <p>
+                     <strong>Badge:</strong>
+                     <span class="glyphicon glyphicon-star"
+                        style="cursor:pointer; font-size:20px; color:gold;"
+                        title="Clicca per scoprire il badge"
+                        onclick="toggleBadge('badge-fitlife')">
+                     </span>
+                  </p>
+                  <div id="badge-fitlife" style="display:none; margin-top:10px;">
+                     <strong>Premio:</strong> "Miglior Progetto Funzionale"
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         
+         <!-- ------------------------------------->
+         <!-- Gruppo 5 - Ai or not?              -->
+         <!-- ------------------------------------->
+          <div class="panel panel-default">
+            <div class="panel panel-default">
+               <div class="panel-heading">Gruppo 5 – <a href="https://aiornotrron.altervista.org/" target="_blank">Gioca che ti passa</a></div>
+               <div class="panel-body">
+                  <p>
+                     <strong>Feedback:</strong><br>
+                     Il gruppo ha lavorato con serietà e continuità, dimostrando impegno e partecipazione durante le attività in classe. L’idea del progetto è particolarmente originale e attuale, ben centrata sul tema dell’intelligenza artificiale e della sua riconoscibilità. La documentazione è chiara e ben strutturata, mentre il sito, pur presentando alcune ingenuità tipiche di un primo approccio allo sviluppo web, risulta coerente, comprensibile e funzionale alla comunicazione dell’idea. Nel complesso, un progetto molto valido e creativo. 
 
-  <div class="panel panel-default">
-    <div class="panel-heading">Gruppo 6 - Gioca Che Ti Passa</div>
-    <div class="panel-body">
-      <p><strong>Voto: 10</strong></p>
-      <p><strong>Feedback:</strong> Il gruppo ha lavorato con serietà e creatività, portando un’idea originale e un’ottima personalizzazione grafica. Buona documentazione e concetto di community.</p>
-      <p><strong>Premio:</strong> "Originalità e Creatività"</p>
-    </div>
-  </div>
+                  </p>
+                  <!-- Bottone mostra voto -->
+                  <button class="btn btn-primary btn-sm"
+                     onclick="toggleVoto('voto-aiornot')">
+                  Mostra voto
+                  </button>
+                  <p id="voto-aiornot" style="display:none; margin-top:10px;">
+                     <strong>Voto:</strong> 8,5
+                  </p>
+                  <hr>
+                  <!-- Icona badge -->
+                  <p>
+                     <strong>Badge:</strong>
+                     <span class="glyphicon glyphicon-star"
+                        style="cursor:pointer; font-size:20px; color:gold;"
+                        title="Clicca per scoprire il badge"
+                        onclick="toggleBadge('badge-aiornot')">
+                     </span>
+                  </p>
+                  <div id="badge-aiornot" style="display:none; margin-top:10px;">
+                      <strong>Premio:</strong> "Miglior Idea Creativa"
+                  </div>
+               </div>
+            </div>
+         </div>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">Gruppo 5 - Fit Life</div>
-    <div class="panel-body">
-      <p><strong>Voto: 9</strong></p>
-      <p><strong>Feedback:</strong> Progetto solido, con un buon uso di Bootstrap e una struttura chiara. Impegno e serietà anche se il lavoro non è stato sempre costante.</p>
-      <p><strong>Premio:</strong> "Miglior Progetto Funzionale"</p>
-    </div>
-  </div>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">Gruppo 5 - AI or Not AI</div>
-    <div class="panel-body">
-      <p><strong>Voto: 8.5</strong></p>
-      <p><strong>Feedback:</strong> Un progetto originale e ben strutturato, anche se con alcune ingenuità tecniche. L'idea è molto attuale e il sito funziona bene per il livello.</p>
-      <p><strong>Premio:</strong> "Miglior Idea Creativa"</p>
-    </div>
-  </div>
+         <!-- ------------------------------------->
+         <!-- Gruppo 2 - Food Share -->
+         <!-- ------------------------------------->
+         <!-- <div class="panel panel-default">
+            <div class="panel-heading">Gruppo 2 - Food Share</div>
+            <div class="panel-body">
+              <p><strong>Voto: 8+</strong></p>
+              <p><strong>Feedback:</strong> Il gruppo ha creato un progetto ben organizzato, con un’idea solida, anche se non tutte le funzionalità sono simulate. L’impegno è stato evidente, ma la documentazione non segue completamente le specifiche.</p>
+              <p><strong>Premio:</strong> "Miglior Impegno"</p>
+            </div> -->
+            <div class="panel panel-default">
+               <div class="panel-heading">Gruppo 2 – <a href="https://isabagnachiarabea.github.io/FoodShare/" target="_blank">Food Share</a></div>
+               <div class="panel-body">
+                  <p>
+                     <strong>Feedback:</strong><br>
+                     Il gruppo ha sviluppato un progetto coerente, gradevole e ben personalizzato, dimostrando impegno concreto nella realizzazione del sito e della documentazione (anche se non presentata seguendo le specifiche). L’idea è interessante e ben argomentata, soprattutto per l’attenzione allo spreco alimentare e alla dimensione di community. Dal punto di vista tecnico la struttura è semplice ma corretta, adeguata a un primo approccio all’HTML.  Non simula tuttavia le funzionalità innovative con mokup o esempi. L'idea resta raccontata più che messa in scena. Un po' più di attenzione all'ordine (cartella non strutturata) e alla nomenclatura (non esiste il file index) non avrebbe guastato.
 
-  <div class="panel panel-default">
-    <div class="panel-heading">Gruppo 2 - Food Share</div>
-    <div class="panel-body">
-      <p><strong>Voto: 8+</strong></p>
-      <p><strong>Feedback:</strong> Il gruppo ha creato un progetto ben organizzato, con un’idea solida, anche se non tutte le funzionalità sono simulate. L’impegno è stato evidente, ma la documentazione non segue completamente le specifiche.</p>
-      <p><strong>Premio:</strong> "Miglior Impegno"</p>
-    </div>
-  </div>
+                  </p>
+                  <!-- Bottone mostra voto -->
+                  <button class="btn btn-primary btn-sm"
+                     onclick="toggleVoto('voto-foodshare')">
+                  Mostra voto
+                  </button>
+                  <p id="voto-foodshare" style="display:none; margin-top:10px;">
+                     <strong>Voto:</strong> 8+
+                  </p>
+                  <hr>
+                  <!-- Icona badge -->
+                  <p>
+                     <strong>Badge:</strong>
+                     <span class="glyphicon glyphicon-star"
+                        style="cursor:pointer; font-size:20px; color:gold;"
+                        title="Clicca per scoprire il badge"
+                        onclick="toggleBadge('badge-foodshare')">
+                     </span>
+                  </p>
+                  <div id="badge-foodshare" style="display:none; margin-top:10px;">
+                      <strong>Premio:</strong>"Miglior Impegno"
+                  </div>
+               </div>
+            </div>
+            
+      </div>
+      
+      
+      <!-- ------------------------------------->
+      <!-- Gruppo 1 - Scambio Interculturale -->
+      <!-- ------------------------------------->
+      <div class="panel panel-default">
+         <!-- <div class="panel-heading">Gruppo 1 - Scambio Interculturale</div>
+            <div class="panel-body">
+              <p><strong>Voto: 7.5</strong></p>
+              <p><strong>Feedback:</strong> Un lavoro positivo, ma con alcune carenze nella cura dei dettagli e nella documentazione. Il sito è ordinato ma basico, un buon punto di partenza per il primo approccio con HTML.</p>
+              <p><strong>Premio:</strong> "Miglior Evoluzione"</p>
+            </div>
+            </div> -->
+            <div class="panel panel-default">
+               <div class="panel-heading">Gruppo 1 – <a href="" target="_blank">Scambio Interculturale</a></div>
+               <div class="panel-body">
+                  <p>
+                     <strong>Feedback:</strong><br>
+                     Il progetto presenta un’idea chiara e interessante, con un’interfaccia gradevole e una navigazione semplice. La realizzazione tecnica, pur basica, è ordinata e adeguata al livello di prima esperienza con HTML e CSS. La documentazione è presente nei contenuti ma non nel formato richiesto. Il gruppo ha lavorato in classe con impegno non sempre costante, mostrando però applicazione negli esercizi propedeutici. Nel complesso un lavoro positivo, migliorabile soprattutto nella cura della consegna e nel rispetto delle specifiche.
 
-  <div class="panel panel-default">
-    <div class="panel-heading">Gruppo 1 - Scambio Interculturale</div>
-    <div class="panel-body">
-      <p><strong>Voto: 7.5</strong></p>
-      <p><strong>Feedback:</strong> Un lavoro positivo, ma con alcune carenze nella cura dei dettagli e nella documentazione. Il sito è ordinato ma basico, un buon punto di partenza per il primo approccio con HTML.</p>
-      <p><strong>Premio:</strong> "Miglior Evoluzione"</p>
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="container-fluid text-center">
-  <p>Valutazioni finali - Progetti 2025</p>
-</footer>
-
-</body>
+                  </p>
+                  <!-- Bottone mostra voto -->
+                  <button class="btn btn-primary btn-sm"
+                     onclick="toggleVoto('voto-scambioint')">
+                  Mostra voto
+                  </button>
+                  <p id="voto-scambioint" style="display:none; margin-top:10px;">
+                     <strong>Voto:</strong> 7,5
+                  </p>
+                  <hr>
+                  <!-- Icona badge -->
+                  <p>
+                     <strong>Badge:</strong>
+                     <span class="glyphicon glyphicon-star"
+                        style="cursor:pointer; font-size:20px; color:gold;"
+                        title="Clicca per scoprire il badge"
+                        onclick="toggleBadge('badge-scambioint')">
+                     </span>
+                  </p>
+                  <div id="badge-scambioint" style="display:none; margin-top:10px;">
+                      <strong>Premio:</strong>"Miglior Evoluzione"
+                  </div>
+               </div>
+            </div>
+      
+      </div>
+      
+      
+      
+      
+      
+      <!-- Footer -->
+      <!-- <footer class="container-fluid text-center">
+         <p>Valutazioni finali - Progetti 2025</p>
+         </footer> -->
+      <footer class="col-md-12" style="text-align:center;">
+         <p>
+            <a href="https://www.facebook.com/Eugenio.Montale/?fref=ts"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://twitter.com/eugenio_montale"><i class="fa fa-twitter-square"></i></a>
+         </p>
+         <p>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br/><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+         <p>
+         <p>Questo sito è stato realizzato per il corso di Informatica indirisso sia presso <a href="https://www.itematteucci.edu.it/" target="_blank"> I.T.E Matteucci, Forlì</a> dalla Prof. <a href="https://lermaiona.wordpress.com/" target="_blank">Miki Spigarolo</a></p>
+      </footer>
+      <!-- Javascript -->
+      <script>
+         function toggleVoto(id) {
+           var el = document.getElementById(id);
+           el.style.display = (el.style.display === "none") ? "block" : "none";
+         }
+         
+         function toggleBadge(id) {
+           var el = document.getElementById(id);
+           el.style.display = (el.style.display === "none") ? "block" : "none";
+         }
+      </script>
+   </body>
 </html>
 
